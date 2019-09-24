@@ -1,0 +1,23 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.message {
+  @apply border;
+  @apply rounded;
+  @apply px-4;
+  @apply py-3;
+}
+.alert {
+  @apply border-red-400;
+  @apply bg-red-100;
+  @apply text-red-700;
+}
+
+.info {
+  @apply border-green-400;
+  @apply bg-green-100;
+  @apply text-green-700;
+}
