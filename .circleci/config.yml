@@ -3,13 +3,13 @@ jobs:
   build:
     docker:
       - image: circleci/node:12
-    working_directory: /app
+    working_directory: ~/app
     steps:
       - checkout
       - run: yarn install
       - run: yarn build
       - persist_to_workspace:
-          root: dist
+          root: ~/app/dist
           paths:
             - .
   deploy:
@@ -17,9 +17,9 @@ jobs:
       - image: circleci/python:3.7-stretch
     steps:
       - attach_workspace:
-          at: /app/dist
+          at: ~/app/dist
       - run: sudo pip install awscli
-      - run: aws s3 cp /app/dist/ s3://circleci-sample-deploy --recursive 
+      - run: aws s3 cp ~/app/dist/ s3://circleci-sample-deploy --recursive 
 
 workflows:
   version: 2
