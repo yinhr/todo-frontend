@@ -19,7 +19,7 @@ jobs:
       - attach_workspace:
           at: ~/app/dist
       - run: sudo pip install awscli
-      - run: aws s3 cp ~/app/dist/ s3://circleci-sample-deploy --recursive 
+      - run: aws s3 sync --exact-timestamps --delete ~/app/dist/ s3://circleci-sample-deploy
 
 workflows:
   version: 2
