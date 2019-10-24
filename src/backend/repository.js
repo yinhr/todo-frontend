@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:8000";
+const url = "https://api.tododot.site";
 
 const axiosInstance = axios.create({
   baseURL: `${url}`,
