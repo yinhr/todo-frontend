@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "https://api.tododot.site";
+const url = process.env.VUE_APP_API_URL;
 
 const axiosInstance = axios.create({
   baseURL: `${url}`,
