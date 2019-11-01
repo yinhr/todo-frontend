@@ -25,8 +25,19 @@ export default {
     }
   },
   created () {
+    this.checkedSignedIn()
+  },
+  updated () {
+    this.checkedSignedIn()
   },
   methods: {
+    checkedSignedIn: function() {
+      if (localStorage.signedIn) {
+        this.$router.replace('/home')
+      } else {
+        delete localStorage.signedIn
+      }
+    }
   }
 }
 </script>
