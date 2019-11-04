@@ -9,6 +9,11 @@
         <div class="text-center self-center">
           <router-link to="/signup" class="block rounded text-xl p-4 hover:bg-green-300">新規登録はこちら</router-link>
           <router-link to="/signin" class="block rounded text-xl p-4 hover:bg-green-300">ログインはこちら</router-link>
+          <div class="rounded text-xl p-4 hover:bg-green-300">
+            <a href="https://www.notion.so/prmcy/ToDo-14f83b283c4b4bd088ee9f11ebe5be13" target="_blank">
+              TODO管理アプリについて
+            </a>
+          </div>
         </div>
       </div>
     </div>
