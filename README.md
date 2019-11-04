@@ -2,8 +2,8 @@
 todo管理アプリのフロントエンド
 
 ## Description
-Vue.jsを用いたtodo管理アプリのフロントエンドを実装 
-バックエンドAPI([yinhr/todo-backend](https://github.com/yinhr/todo-backend))とtodo情報を通信し表示 
+Vue.jsを用いたtodo管理アプリのフロントエンドを実装  
+バックエンドAPI([yinhr/todo-backend](https://github.com/yinhr/todo-backend))とtodo情報を通信し表示  
 cssフレームワーク[tailwind](https://tailwindcss.com/)を用いたレスポンシブデザインに対応
 
 ## todo管理アプリ
@@ -14,7 +14,7 @@ cssフレームワーク[tailwind](https://tailwindcss.com/)を用いたレス�
 * axiosを用いたAPIとの非同期通信
 * vue-routerによるルーティング機能
 * vuexによる状態管理
-* ログイン状態の管理
+* ログイン状態管理
 
 ## Usage
 
