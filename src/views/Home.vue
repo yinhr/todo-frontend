@@ -1,7 +1,11 @@
 <template>
   <div class="home bg-gray-100">
-    <Header :parentComponent="home"></Header>
-    <ItemList></ItemList>
+    <Header :parentComponent="home"
+       @orderByDeadline="orderByDeadline"
+       @orderByCreatedDateDesc="orderByCreatedDateDesc"
+       @orderByCreatedDateAsc="orderByCreatedDateAsc"
+    ></Header>
+    <ItemList ref="itemList"></ItemList>
     <Footer></Footer>
   </div>
 </template>
@@ -21,6 +25,17 @@ export default {
   data: function () {
     return {
       home: 'home'
+    }
+  },
+  methods: {
+    orderByDeadline: function() {
+      this.$refs.itemList.orderByDeadline()
+    },
+    orderByCreatedDateDesc: function() {
+      this.$refs.itemList.orderByCreatedDateDesc()
+    },
+    orderByCreatedDateAsc: function() {
+      this.$refs.itemList.orderByCreatedDateAsc()
     }
   }
 }

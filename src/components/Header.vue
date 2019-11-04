@@ -91,13 +91,13 @@ export default {
   },
   methods: {
     orderByDeadline: function() {
-      this.$store.commit("orderByDeadline");
+      this.$emit('orderByDeadline')
     },
     orderByCreatedDateDesc: function() {
-      this.$store.commit("orderByCreatedDateDesc");
+      this.$emit('orderByCreatedDateDesc')
     },
     orderByCreatedDateAsc: function() {
-      this.$store.commit("orderByCreatedDateAsc");
+      this.$emit('orderByCreatedDateAsc')
     },
     signOut: function() {
       SigninRepository.delete()
