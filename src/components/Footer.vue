@@ -1,9 +1,9 @@
 <template>
   <footer id="footer" class="bg-gray-700">
     <div class="md:flex md:justify-around max-w-5xl mx-auto px-4 py-3 text-gray-200">
-      <router-link to="/home" class="block p-2">
-        <div class="font-black">Home</div>
-      </router-link>
+      <div class="p-2">
+        <router-link to="/home" class="font-black">Home</router-link>
+      </div>
       <div class="p-2">
         <div class="font-black">About</div>
         <div class="p-2">
