@@ -15,6 +15,9 @@ cssフレームワーク[tailwind](https://tailwindcss.com/)を用いたレス�
 * vue-routerによるルーティング機能
 * vuexによる状態管理
 * ログイン状態管理
+* todoの期限、作成日によるソート
+* todoタイトルによるフィルタリング
+* 無限スクロール
 
 ## Usage
 
